@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&family=PT+Serif:wght@400;700&family=Poppins:wght@400;600&display=swap');
+:root{
+    --pt-serif: 'PT Serif', serif;
+    --poppins : 'Poppins', sans-serif;
+}
+
+html{
+	font-size: 15.3px;
+	margin: 0;
+	}
+	body{
+	  font-size: 1.5rem;
+	  margin:0;
+	  padding:0;
+	  overflow-wrap: anywhere;
+	  line-break: strict;
+	  text-align:center;
+		width: 100%;
+	}
+
+.conatiner__header{
+	text-align:start;
+	padding: 2rem;
+	display: grid;
+}
+.title__header{
+	font-family:var(--pt-serif);
+	font-size: 3.4rem;
+}
+.description__header{
+
+	font-family:var(--poppins);
+}
+.title__description{
+	font-size: 1.8rem;
+}
+.description{
+	font-size: 1.4rem;
+}
+.content__main{
+	display: grid;
+	grid-template-columns: repeat(2,1fr);
+	margin: 2rem;
+}
+.mask__group{
+	display: grid;
+	grid-template-columns: 2fr 1fr;
+}
+.container__card{
+	margin: 0;
+}
+
+.perfil__card{
+	width: 10.9rem;
+	height: 20.6rem;
+}
+.name_perfil{
+    writing-mode: vertical-lr;
+    transform: rotate(180deg);
+	margin: 0;
+	text-align: end;
+	justify-self: start;
+	font-size: 1.2rem;
+
+}
+.name__person{
+	font-size:1.8rem;
+	font-weight: bold;
+}
+.down__container{
+	margin-top: 4rem;
+}
+.text__footer{
+	font-family: 'Montserrat', sans-serif;
+	font-size: 1.4rem;
+}
+/* tabletas */
+@media (min-width: 768px) {
+	.content__main{
+		grid-template-columns: repeat(3,1fr);
+	}
+	.down__container__self{
+		margin-top: 8rem;
+	}
+}
+
+/* escritorio normales */
+@media (min-width: 992px) {
+	.conatiner__header{
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+	}
+	.perfil__card{
+		width: 15.9rem;
+		height: 25.6rem;
+	}
+}
+
+/* pantallas grandes */
+@media (min-width: 1200px) {
+}
